@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非同期通信</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./asynchronous.js" defer></script>
+    <style type="text/css">
+        .func {
+            padding-bottom: 10px;
+        }
+        .func1, .func2 {
+            width: 150px;
+        }
+        .textarea {
+            width: 100%;
+            height: calc(100vh - 50px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="func">
+        <button class="func1" onclick="func1()">非同期通信の確認1</button>
+        <button class="func2" onclick="func2()">非同期通信の確認2</button>
+    </div>
+    <textarea class="textarea" id='textarea'></textarea>
+</body>
+
+</html>

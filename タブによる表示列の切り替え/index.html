@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タブで切り替えるテーブル</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tabs">
+  <div id="tab1" class="active">タブ1</div>
+  <div id="tab2">タブ2</div>
+  <div id="tab3">タブ3</div>
+</div>
+
+<table id="dataTable" class="tab1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>名前</th>
+      <th class="tab1-columns">タブ1データ1</th>
+      <th class="tab1-columns">タブ1データ2</th>
+      <th class="tab1-columns">タブ1データ3</th>
+      <th class="tab1-columns">タブ1データ4</th>
+      <th class="tab2-columns">タブ2データ1</th>
+      <th class="tab2-columns">タブ2データ2</th>
+      <th class="tab2-columns">タブ2データ3</th>
+      <th class="tab2-columns">タブ2データ4</th>
+      <th class="tab3-columns">タブ3データ1</th>
+      <th class="tab3-columns">タブ3データ2</th>
+      <th class="tab3-columns">タブ3データ3</th>
+      <th class="tab3-columns">タブ3データ4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>山田太郎</td>
+      <td class="tab1-columns">データ1-1</td>
+      <td class="tab1-columns">データ1-2</td>
+      <td class="tab1-columns">データ1-3</td>
+      <td class="tab1-columns">データ1-4</td>
+      <td class="tab2-columns">データ2-1</td>
+      <td class="tab2-columns">データ2-2</td>
+      <td class="tab2-columns">データ2-3</td>
+      <td class="tab2-columns">データ2-4</td>
+      <td class="tab3-columns">データ3-1</td>
+      <td class="tab3-columns">データ3-2</td>
+      <td class="tab3-columns">データ3-3</td>
+      <td class="tab3-columns">データ3-4</td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

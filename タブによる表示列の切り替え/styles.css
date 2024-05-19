@@ -1,0 +1,41 @@
+/* タブのスタイル */
+.tabs {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tabs div {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+/* アクティブなタブのスタイル */
+.tabs div.active {
+  background-color: #f0f0f0;
+  border-top: 2px solid #000;
+}
+
+/* テーブルのスタイル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* 非表示にする列（:not()セレクタを使用） */
+#dataTable:not(.tab1) .tab1-columns,
+#dataTable:not(.tab2) .tab2-columns,
+#dataTable:not(.tab3) .tab3-columns {
+  display: none;
+}
